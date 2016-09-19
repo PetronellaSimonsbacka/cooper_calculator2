@@ -1,6 +1,7 @@
 angular.module('starter.controllers', [])
 
 .controller('BmiController', function() {
+  
 
 })
 
