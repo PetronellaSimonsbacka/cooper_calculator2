@@ -31,6 +31,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
+  .state('tab.bmi', {
+    url: '/bmi',
+    views: {
+      'tab-bmi': {
+        templateUrl: 'templates/calculator/calculator.html',
+        controller: 'BmiController'
+      }
+    }
+  })
+  .state('tab.about', {
+     url: '/about',
+     views: {
+       'tab-about': {
+         templateUrl: 'templates/about/about.html',
+         controller: 'AboutController'
+       }
+     }
+   })
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
@@ -38,19 +56,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'templates/tabs.html'
   })
 
-  .state('tab.about', {
-  url: '/about',
-  views: {
-    'tab-about': {
-      templateUrl: 'templates/about/about.html',
-      controller: 'AboutController'
-    }
-  }
-})
-
   // Each tab has its own nav history stack:
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/about');
-
 });
