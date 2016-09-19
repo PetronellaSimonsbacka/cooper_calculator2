@@ -4,6 +4,11 @@
       <div class="col">
 
         <div class="list">
+            <form action="" id="toggle_system" >
+                <input type="radio" name="system" value="data.metric" checked id="metric_radio"> Metric&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="system" value="data.imperial" id="imperial_radio"> Imperial<br>
+            </form>
+
         <label class="item item-input">
           <input type="number" class="item item-input" placeholder="Weight" ng-model="data.weight">
         </label>
