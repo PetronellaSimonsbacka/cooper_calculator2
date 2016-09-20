@@ -5,8 +5,8 @@ angular.module('starter.controllers', [])
   $scope.data = {};
   $scope.calculateBMI = function() {
     var person = new Person({
-      weight: $scope.data.weight,
-      height: $scope.data.height
+      distance: $scope.data.distance,
+      age: $scope.data.age
     });
     var selectObject = document.getElementById('woman_radio');
     if (selectObject.checked) {

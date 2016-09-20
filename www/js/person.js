@@ -1,6 +1,6 @@
 function Person(attr) {
-  this.weight = attr.weight;
-  this.height = attr.height;
+  this.distance = attr.distance;
+  this.age = attr.age;
 };
 
 Person.prototype.calculate_bmi_woman = function() {
