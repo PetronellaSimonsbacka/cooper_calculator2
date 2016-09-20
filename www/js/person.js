@@ -3,12 +3,12 @@ function Person(attr) {
   this.age = attr.age;
 };
 
-Person.prototype.calculate_bmi_woman = function() {
-  calculator = new BMICalculator();
-  calculator.woman_bmi(this);
+Person.prototype.calculate_cooper_woman = function() {
+  calculator = new CooperCalculator();
+  calculator.woman_cooper(this);
 };
 
-Person.prototype.calculate_bmi_man = function() {
-  calculator = new BMICalculator();
-  calculator.man_bmi(this);
+Person.prototype.calculate_cooper_man = function() {
+  calculator = new CooperCalculator();
+  calculator.man_cooper(this);
 };

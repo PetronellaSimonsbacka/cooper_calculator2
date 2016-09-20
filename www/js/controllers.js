@@ -1,18 +1,18 @@
 angular.module('starter.controllers', [])
 
 
-.controller('BmiController', function($scope) {
+.controller('CooperController', function($scope) {
   $scope.data = {};
-  $scope.calculateBMI = function() {
+  $scope.calculateCooper = function() {
     var person = new Person({
       distance: $scope.data.distance,
       age: $scope.data.age
     });
     var selectObject = document.getElementById('woman_radio');
     if (selectObject.checked) {
-       person.calculate_bmi_woman();
+       person.calculate_cooper_woman();
     } else {
-      person.calculate_bmi_man();
+      person.calculate_cooper_man();
     }
     $scope.person = person;
   };

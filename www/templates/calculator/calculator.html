@@ -1,4 +1,4 @@
-<ion-view title="CooperCalculator">
+<ion-view title="Cooper Calculator">
   <ion-content>
     <div class="row">
       <div class="col">
@@ -16,7 +16,7 @@
         <label class="item item-input">
           <input type="number" class="item item-input" placeholder="Fill in your age" ng-model="data.age">
         </label>
-        <button class="button button-full button-calm" ng-click="calculateBMI()">Calculate</button>
+        <button class="button button-full button-calm" ng-click="calculateCooper()">Calculate</button>
       </div>
 
       <div class="card" ng-if="person">
@@ -25,8 +25,8 @@
         </div>
         <div class="item item-text-wrap">
           <p>Person: Distance {{person.distance}}, Age {{person.age}}</p>
-          <p>BMI: {{person.bmiValue}}</p>
-          <p><strong>You are {{person.bmiMessage}}</strong></p>
+          <p>Cooper: {{person.cooperValue}}</p>
+          <p><strong>You are {{person.cooperMessage}}</strong></p>
         </div>
       </div>
 
