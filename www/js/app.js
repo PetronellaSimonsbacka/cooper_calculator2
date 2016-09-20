@@ -31,10 +31,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
-  .state('tab.bmi', {
+  .state('tab.cooper', {
     url: '/cooper',
     views: {
-      'tab-bmi': {
+      'tab-cooper': {
         templateUrl: 'templates/calculator/calculator.html',
         controller: 'CooperController'
       }
