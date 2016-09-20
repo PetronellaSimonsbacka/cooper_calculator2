@@ -32,7 +32,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   $stateProvider
 
   .state('tab.bmi', {
-    url: '/bmi',
+    url: '/cooper',
     views: {
       'tab-bmi': {
         templateUrl: 'templates/calculator/calculator.html',
