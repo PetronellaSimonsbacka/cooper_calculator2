@@ -1,7 +1,7 @@
 function BMICalculator(){
 };
 
-BMICalculator.prototype.metric_bmi = function(obj) {
+BMICalculator.prototype.woman_bmi = function(obj) {
   var weight = obj.weight;
   var height = obj.height;
   if (weight > 0 && height > 0) {
@@ -11,7 +11,7 @@ BMICalculator.prototype.metric_bmi = function(obj) {
   }
 };
 
-BMICalculator.prototype.imperial_bmi = function(obj) {
+BMICalculator.prototype.man_bmi = function(obj) {
   var weight = obj.weight;
   var height = obj.height;
   if (weight > 0 && height > 0) {

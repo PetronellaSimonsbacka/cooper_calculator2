@@ -8,11 +8,11 @@ angular.module('starter.controllers', [])
       weight: $scope.data.weight,
       height: $scope.data.height
     });
-    var selectObject = document.getElementById('metric_radio');
+    var selectObject = document.getElementById('woman_radio');
     if (selectObject.checked) {
-       person.calculate_bmi_met();
+       person.calculate_bmi_woman();
     } else {
-      person.calculate_bmi_imp();
+      person.calculate_bmi_man();
     }
     $scope.person = person;
   };
